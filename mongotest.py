@@ -12,9 +12,10 @@ doc = { 'a': 1, 'b': 'hat' }
 values = array('d')
 
 for i in xrange(0, 200):
-    startTime = time.time()
-    m.tests.insertTest.insert(doc, manipulate=False, w=1)
-    endTime = time.time()
+    startTime = time.clock()
+#    m.tests.insertTest.insert(doc, manipulate=False, w=1)
+    m.tests.insertTest.insert(doc, manipulate=False, j=True)
+    endTime = time.clock()
 
     executionTime = (endTime - startTime) * 1000 # In ms
 
