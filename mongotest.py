@@ -14,7 +14,7 @@ values = array('d')
 for i in xrange(0, 200):
     startTime = time.clock()
 #    m.tests.insertTest.insert(doc, manipulate=False, w=1)
-    m.tests.insertTest.insert(doc, manipulate=False, j=True)
+    m.tests.insertTest.insert(doc, manipulate=False, w=1, j=True)
     endTime = time.clock()
 
     executionTime = (endTime - startTime) * 1000 # In ms
